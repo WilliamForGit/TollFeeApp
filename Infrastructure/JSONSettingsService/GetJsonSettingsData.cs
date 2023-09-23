@@ -19,7 +19,7 @@ namespace Infrastructure.JSONSettingsService
                         jsonFilePath = "JSONSettings\\TollFeeTimePoints.json";
                         break;
                     case "VehicleType":
-                        jsonFilePath = "JSONSettings\\TollVehicleTypes.json";
+                        jsonFilePath = "JSONSettings\\TollVehicleTypes.json"; 
                         break;
                     default:
                         Console.WriteLine($"Error: Invalid filePathType '{filePathType}'.");
