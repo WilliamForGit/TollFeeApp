@@ -51,12 +51,32 @@ namespace Application.Services
                 Console.WriteLine($"Error processing time range. Error: {ex.Message}");
             }
         }
+
+        //To calculate the toll fee by time points
+        public static int GetTollFeeByTimeRange(DateTime date)
+        {
+            LoadTollFeeData(); //load the time points of day to list
+
+            var timeOfDay = date.TimeOfDay;
+
+            foreach (var range in tollFeeRanges)
+            {
+                if (timeOfDay >= range.StartTime && timeOfDay <= range.EndTime)
+                {
+                    return range.FeeAmount;
+                }
+            }
+
+            return 0; // Default fee when no matching range is found.
+        }
     }
 
+
     public class TollFeeTPRange
-    {
-        public int FeeAmount { get; set; }
-        public TimeSpan StartTime { get; set; }
-        public TimeSpan EndTime { get; set; }
-    }
+     {
+            public int FeeAmount { get; set; }
+            public TimeSpan StartTime { get; set; }
+            public TimeSpan EndTime { get; set; }
+     }
+    
 }
