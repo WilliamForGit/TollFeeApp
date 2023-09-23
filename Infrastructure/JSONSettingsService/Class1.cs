@@ -1,4 +1,4 @@
-﻿namespace Infrastructure
+﻿namespace Infrastructure.JSONSettingsService
 {
     public class Class1
     {

@@ -1,0 +1,32 @@
+{
+  "VehicleTypes": [
+    {
+      "VehicleType": "Car",
+      "isTollFreeVehicle": false
+    },
+    {
+      "VehicleType": "Motorbike",
+      "isTollFreeVehicle": true
+    },
+    {
+      "VehicleType": "Tractor",
+      "isTollFreeVehicle": true
+    },
+    {
+      "VehicleType": "Emergency",
+      "isTollFreeVehicle": true
+    },
+    {
+      "VehicleType": "Diplomat",
+      "isTollFreeVehicle": true
+    },
+    {
+      "VehicleType": "Foreign",
+      "isTollFreeVehicle": true
+    },
+    {
+      "VehicleType": "Military",
+      "isTollFreeVehicle": true
+    }
+  ]
+}

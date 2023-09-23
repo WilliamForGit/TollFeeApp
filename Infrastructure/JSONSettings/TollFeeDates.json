@@ -1,0 +1,65 @@
+{
+  "Year": 2013,
+  "Months": [
+    {
+      "Month": 1,
+      "IsFreeMonth": false,
+      "NoFeeDays": [ 1 ]
+    },
+    {
+      "Month": 2,
+      "IsFreeMonth": false,
+      "NoFeeDays": []
+    },
+    {
+      "Month": 3,
+      "IsFreeMonth": false,
+      "NoFeeDays": [ 28, 29 ]
+    },
+    {
+      "Month": 4,
+      "IsFreeMonth": false,
+      "NoFeeDays": [ 1, 30 ]
+    },
+    {
+      "Month": 5,
+      "IsFreeMonth": false,
+      "NoFeeDays": [ 1, 8, 9 ]
+    },
+    {
+      "Month": 6,
+      "IsFreeMonth": false,
+      "NoFeeDays": [ 5, 6, 21 ]
+    },
+    {
+      "Month": 7,
+      "IsFreeMonth": true,
+      "NoFeeDays": []
+    },
+    {
+      "Month": 8,
+      "IsFreeMonth": false,
+      "NoFeeDays": []
+    },
+    {
+      "Month": 9,
+      "IsFreeMonth": false,
+      "NoFeeDays": []
+    },
+    {
+      "Month": 10,
+      "IsFreeMonth": false,
+      "NoFeeDays": []
+    },
+    {
+      "Month": 11,
+      "IsFreeMonth": false,
+      "NoFeeDays": [ 1 ]
+    },
+    {
+      "Month": 12,
+      "IsFreeMonth": false,
+      "NoFeeDays": [ 24, 25, 26, 31 ]
+    }
+  ]
+}

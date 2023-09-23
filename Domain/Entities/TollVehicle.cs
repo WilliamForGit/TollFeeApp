@@ -1,6 +1,6 @@
-﻿namespace Domain
+﻿namespace Domain.Entities
 {
-    public class Class1
+    public class TollVehicle
     {
 
     }
