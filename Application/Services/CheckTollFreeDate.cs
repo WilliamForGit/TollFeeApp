@@ -10,6 +10,10 @@ namespace Application.Services
 {
     public static class CheckTollFreeDate
     {
+        /**
+         * To get the data from the dates of one year from JsonSettings ,
+         * then to judge the day is free day or not
+         */
         public static bool IsTollFreeDate(DateTime date)
         {
             int year = date.Year;

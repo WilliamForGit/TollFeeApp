@@ -12,19 +12,19 @@ namespace Application.Services
     {
         static readonly List<TollFeeTPRange> tollFeeRanges = new();
 
+        //To load the Timepoints range and respective fee amounts
         private static void LoadTollFeeData()
         {
             try
             {
                 var timePointsData = new GetJsonSettingsData<DayTollFeeTimePoints>();
-
                 DayTollFeeTimePoints tollFeeTRData = timePointsData.ReadJsonSettingsData("TollFeeTimePoints");
 
                 foreach (var timePoint in tollFeeTRData.TollFeeTimePoints)
                 {
                     foreach (var timeRangeStr in timePoint.TimePoints)
                     {
-                        // Split the time range into start and end points using '-' as the separator.
+                        // Split the time range into start and end points using '-' as the separator as we using it in the JSON file
                         var timeRangeParts = timeRangeStr.Split('-');
                         if (timeRangeParts.Length == 2 &&
                             TimeSpan.TryParse(timeRangeParts[0], out TimeSpan startTime) &&

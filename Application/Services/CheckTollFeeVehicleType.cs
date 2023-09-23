@@ -10,6 +10,10 @@ namespace Application.Services
 {
     public static class CheckTollFeeVehicleType
     {
+        /**
+         * To get the data from the Toll Vehicle Types from JsonSettings ,
+         * then to judge the vehicle is free or not
+         */
         public static bool IsTollFreeVehicle(string type)
         {
             try
