@@ -1,4 +1,4 @@
-﻿namespace Application
+﻿namespace Application.Services
 {
     public class TollFeeCalculatorService
     {
