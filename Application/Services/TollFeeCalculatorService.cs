@@ -40,7 +40,9 @@ namespace Application.Services
                 }
 
                 // Add the last maximum fee
-                totalFee += maxFeeInInterval;               
+                totalFee += maxFeeInInterval;
+
+                if (totalFee > 60) totalFee = 60;
 
                 return totalFee;
             }
